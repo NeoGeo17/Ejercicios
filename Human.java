@@ -20,24 +20,31 @@ public class Human {
 
 	while(true){
 	    System.out.println("Elige un numero del 1 al 100:");
+            
+	    try {
+	    
+		input = Integer.parseInt(sc.nextLine());
 
-	    input = Integer.parseInt(sc.nextLine());
+	        if(input > max || input < min){
+		    System.out.println("Estas fuera del rango indicado!!!.");
+	        }
+	        if(input == secretNumber){
+                    System.out.println("*** You win!!!. ***");
+		    break;
+	        }
+	        if(secretNumber > input){
 
-	    if(input > max || input < min){
-		System.out.println("Estas fuera del rango indicado!!!.");
-	    }
-	    if(input == secretNumber){
-                System.out.println("*** You win!!!. ***");
-		break;
-	    }
-	    if(secretNumber > input){
+                    System.out.println("El numero secreto es mas alto.");
+	        }
 
-                System.out.println("El numero secreto es mas alto.");
-	    }
+	        if(secretNumber < input){
 
-	    if(secretNumber < input){
+                    System.out.println("El numero secreto es mas bajo.");
+	        }
 
-                System.out.println("El numero secreto es mas bajo.");
+	    } catch(NumberFormatException ex){
+            
+		System.out.println("Por favor, ingresa un numero entero.");
 	    }
 	}
 
