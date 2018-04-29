@@ -26,6 +26,14 @@ public class Computer {
                 System.out.println("*** I win!!!. ***");
 		break;
 	    }
+	    if(answer.equals("+")){
+
+                min =  computer + 1;
+	    }
+	    if(answer.equals("-")){
+                
+		max = computer - 1;
+	    }
 	}
     }
 
