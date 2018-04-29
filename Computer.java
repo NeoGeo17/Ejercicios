@@ -18,7 +18,7 @@ public class Computer {
             //Punto medio de partida
 	    int computer = (max + min) / 2;
 
-	    System.out.println("Es tu numero el " + computer + "?");
+	    System.out.print("Es tu numero el " + computer + "?");
 	    answer = sc.nextLine();
 
 	    if(answer.equals("=")){
