@@ -19,7 +19,7 @@ public class AdivinaElnumero {
 	String option = null;
 	Scanner sc = new Scanner(System.in);
 
-        System.out.println("Escribe \"me\" si quieres que adivine tu numero, en caso contrario lo hare yo:");
+        System.out.println("Escribe \"me\" si quieres que adivine tu numero, en caso contrario presiona ENTER y adivina mi numero secreto:");
         option = sc.nextLine();
 
 	if(option.equals("me")){
