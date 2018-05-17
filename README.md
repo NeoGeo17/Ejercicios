@@ -1,1 +1,1 @@
-Este es el juego de adivina el número, la computadora te adivinará tu número o podes adivinarselo a ella.
+El juego consiste en que alguien piensa un numero del 1 al 100. El oponente debe adivinarlo sabiendo que en cada intento el numero es mas grande o mas chico al numero secreto. Un humano le adivina el numero a la computadora y también la computadora le adivina el numero al humano.
